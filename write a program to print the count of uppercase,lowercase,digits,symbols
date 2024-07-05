@@ -1,0 +1,36 @@
+package strings;
+public class StringExample{
+    public static void main(String[]args){
+        String s1= "HelloWorl234$";
+        int ucount=0,lcount=0,scount=0,dcount=0;
+        char ch='a';
+        for(int i=0;i<s1.length();i++){
+            ch=s1.charAt(i);
+            if(ch>'A'&&ch<='Z'){
+                ucount=ucount+1;
+            }
+            else if(ch>='a'&&ch<='z'){
+                lcount=lcount+1;
+            }
+            else if(ch>='0'&& ch<='9'){
+                dcount=dcount+1;
+            }
+            else{
+                scount=scount+1;
+            }
+
+        }
+        System.out.println("uppercount="+ucount);
+        System.out.println("lowercount="+lcount);
+        System.out.println("digitcount="+dcount);
+        System.out.println("symbolcount="+scount);
+
+    }
+}
+output:
+uppercount=2
+lowercount=7
+digitcount=3
+symbolcount=1
+
+Process finished with exit code 0
