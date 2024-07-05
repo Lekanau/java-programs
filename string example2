@@ -1,0 +1,13 @@
+package strings;
+import java.util.Arrays;
+public class StringExample2 {
+    public static void main(String[] args) {
+        String s1 = "HelloWorld234$";
+        String vowel = "vishnu";
+        char[] ch1 = vowel.toCharArray();
+        Arrays.sort(ch1);
+        System.out.println(ch1);
+        }
+        }
+        output:
+        hinsuv
