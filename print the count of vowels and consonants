@@ -1,0 +1,24 @@
+ public class StringExample2{
+    public static void main(String[]args){
+        String s1="HelloWorld234$";
+        String vowel="aeiouAEIOU";
+        int vcount = 0,ccount=0;
+        for(int i=0;i<s1.length();i++){
+            char ch =s1.charAt(i);
+            if(ch>='A'&&ch<='Z'||ch>'a'&&ch<='z'){
+                if(vowel.indexOf(ch)!=-1)
+                {
+                    vcount++;
+                }
+                else{
+                    ccount++;
+                }
+            }
+        }
+        System.out.println(vcount);
+        System.out.println(ccount);
+    }
+}
+output:
+3
+7
